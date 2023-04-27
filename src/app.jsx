@@ -8,13 +8,15 @@ import googleLogo from './assets/google-logo.svg';
 
 const App = () => {
   return (
-    <div className="flex w-screen font-poppins justify-center items-center">
-      <div className="flex justify-center items-center w-1/2">
-        <div className="flex flex-col gap-10">
-          <Header
-            title="Welcome Back"
-            subTitle="Welcome Back! Please enter your details"
-          />
+    <div className="flex h-screen w-screen font-poppins justify-center items-center">
+      <div className="flex justify-center items-center md:w-1/2">
+        <div className="flex flex-col md:gap-10 gap-5">
+          <div className="flex justify-center">
+            <Header
+              title="Welcome Back"
+              subTitle="Welcome Back! Please enter your details"
+            />
+          </div>
 
           <div className="flex flex-col gap-5">
             <InputWithLabel
@@ -61,11 +63,11 @@ const App = () => {
         </div>
       </div>
 
-      <div className="w-1/2 bg-blend-darken">
+      <div className="w-1/2 bg-blend-darken hidden md:inline">
         <img
           src={person}
           alt="Person Image"
-          className="object-cover h-screen w-full"
+          className="object-cover h-screen w-full "
         />
       </div>
     </div>
