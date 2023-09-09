@@ -55,7 +55,7 @@ const App = () => {
 
             <div className="flex justify-center">
               <p className="font-medium text-[10px]">
-                Don't have an account?{' '}
+                Don't have an account?
                 <span className="text-bgRedColor">Sign up for free!</span>
               </p>
             </div>
